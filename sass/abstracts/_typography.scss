@@ -1,16 +1,24 @@
+// font-families
+//$ff-sans: 'Open Sans', sans-serif;
+$ff-sans: 'Lato', sans-serif;
+$ff-serif: 'Abril Fatface', serif;
+
+$ff-base: $ff-sans;
+$ff-accent: $ff-serif;
+
+// font-sizes
 $font-sizes: (
-  900: 3.75rem, // 60px
-  800: 3rem, // 48px
-  600: 1.5rem, // 24px
+  900: clamp(2.5rem, .5rem + 10vw, 5rem), // 60px
+  800: clamp(2.5rem, .5rem + 7vw, 3.75rem), // 48px
+  600: clamp(1.4rem, .5rem + 3vw, 1.6875rem),// 24px
   500: 1.3125rem, // 21px
   400: 1.125rem, // 18px
   300: 1rem,
+  200: .875rem,
+  100: .75rem,
+  50: .5rem,
 );
-
-// font-families
-$ff-sans: 'Open Sans', sans-serif;
 
 // font-weights
 $fw-400: 400;
 $fw-700: 700;
-

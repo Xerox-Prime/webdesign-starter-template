@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+.lead {
+  font-size: fs(600);
+  font-weight: $fw-700;
+  color: clr(neutral, 400);
+  text-transform: uppercase;
+  //line-height: 1.5;
+
+  //setting the next paragraph's margin-top to 0 
+  & + p {
+    margin-top: 0;
+  }
+}

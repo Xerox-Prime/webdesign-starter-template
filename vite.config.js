@@ -1,6 +1,17 @@
-import htmlPurge from 'vite-plugin-html-purgecss';
+import purgecss from "@fullhuman/postcss-purgecss";
 
-export default {
-  plugins: [
-    htmlPurge()],
-};
+export default function (options) {
+  return {
+    name: "plugin-purgecss",
+    apply: "build",
+    enforce: "post",
+    config() {
+      return {
+        css: {
+          postcss: { plugins: [purgecss(options)] }
+        }
+      };
+    }
+  };
+}
+

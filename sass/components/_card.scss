@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.card {
+  //helps position the div bottom of the card
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    //background-color: clr(neutral,100);
+    //border-radius: 0.5rem;
+    padding: $card-body-padding;
+  }
+  &[data-type="testimonial"] &__body {
+    // &__body is required for positioning the quote
+    position: relative;
+    isolation: isolate;
+
+    &::after {
+      position: absolute;
+      top: -5rem;
+      left: -.5rem;
+      content: "\201C";
+      z-index: -1;
+      font-size: 15rem;
+      font-family: $ff-serif;
+      opacity: .1;
+    }
+  }
+      
+}

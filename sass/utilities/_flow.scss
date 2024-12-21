@@ -1,0 +1,7 @@
+.flow > *:where(:not(:first-child)) {
+  // use --flow-space in html style element like this:
+  //<p class="flow" style="--flow-space: 3rem">
+  //doesn't add margin bottom, top but only in between elements
+  margin-top: var(--flow-space, 1rem);
+}
+

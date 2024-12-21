@@ -5,10 +5,10 @@
   gap: var(--grid-gap, $grid-gap);
 //  grid-auto-flow: column;
 
-  & > * {
-    max-width:500px;
-    margin-inline: auto;
-  }
+  //& > * {
+  //  max-width:500px;
+  //  margin-inline: auto;
+  //}
 
   // maintain even width length for elements/buttons
   @include mq(medium) {

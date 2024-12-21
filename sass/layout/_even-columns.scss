@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.even-columns {
+  display: grid;
+  gap: var(--grid-gap, $grid-gap);
+//  grid-auto-flow: column;
+
+  & > * {
+    max-width:500px;
+    margin-inline: auto;
+  }
+
+  // maintain even width length for elements/buttons
+  @include mq(medium) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}

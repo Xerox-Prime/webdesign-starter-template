@@ -3,6 +3,8 @@
 .card {
   //helps position the div bottom of the card
   display: grid;
+  gap: 1rem;
+  pading: $card-body-padding;
   grid-template-rows: auto 1fr auto;
 
   &__body {
@@ -13,7 +15,7 @@
     padding: $card-body-padding;
   }
   &[data-type="testimonial"] &__body {
-    // &__body is required for positioning the quote
+    // &__body is required for positioning the quote pseudo item
     position: relative;
     isolation: isolate;
 

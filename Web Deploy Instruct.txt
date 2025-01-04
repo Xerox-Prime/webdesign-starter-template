@@ -1,0 +1,19 @@
+1. Initialize Git in Your Project Directory: Open your Windows Terminal and navigate to your Vite project directory:
+cd path/to/your/vite-project
+git init
+
+2. Add Your Project Files to Git: Add all your project files to the staging area:
+git add .
+
+3. Commit Your Changes: Commit the added files with a message:
+git commit -m "Initial commit"
+
+4. Create a New Repository on GitHub: Go to GitHub and create a new repository. Copy the repository URL.
+
+5. Add the Remote Repository: Link your local repository to the remote repository on GitHub:
+git remote add origin https://github.com/your-username/your-repo-name.git
+
+6. Push Your Code to GitHub: Push your code to the main branch of the remote repository:
+git branch -M main
+git push -u origin main
+

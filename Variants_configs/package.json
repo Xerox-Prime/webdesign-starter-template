@@ -1,0 +1,19 @@
+{
+  "name": "webdesign-starter-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": "> 0.22%, last 3 versions, not dead",
+  "devDependencies": {
+    "@mojojoejo/vite-plugin-purgecss": "^1.1.0",
+    "@types/postcss-preset-env": "^7.7.0",
+    "postcss-preset-env": "^10.1.3",
+    "sass": "^1.81.0",
+    "vite": "^4.5.5"
+  }
+}
